@@ -10,7 +10,7 @@ c = 299792.458; %speed of light
 tol = 10^(-3); %so we have the error in meters in stead of kilometers
 n=4;
 
-
+%hello
 x = newtonmult(x0,tol,A,B,C,t,c,n); % x is a vector that contains x,y,z and d
 
 fprintf('Problem 1\n\nThe location of the reciever is the following\n\nx = %.6f\ny = %.6f\nz = %.6f\n\nAnd the difference between the satellite clock and the receiver clock\nd = %.6s',x(1),x(2),x(3),x(4))
