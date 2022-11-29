@@ -3,7 +3,7 @@ clear all; close all; clc;
 x=[pi/12;0]; %Initial conditions
 T=20;
 n=500;
-L=2
+L=2;
 [t, y]=Euler_func_multi(x,n,T); 
 
 plot_theta(t,y)%plot theta
