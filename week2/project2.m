@@ -1,12 +1,10 @@
 clear all; close all; clc;
-%In problem 2 the code was written, in problem 3 the initial conditions
-%were set and the outcome plotted
 
 x=[pi/12;0]; %Initial conditions
 T=20;
 n=500;
-L=2
-[t, y]=Euler_func_multi(x,n,T); %This is an approximation, here there is no friction so the angle should be just a constant wave, but because this is an approximation and euler method is not accurate is shows like the wave is increasing....
+L=2;
+[t, y]=Euler_func_multi(x,n,T); 
 
 plot_theta(t,y)%plot theta
 hold off
