@@ -1,9 +1,5 @@
 function plot_pendulum(y,L)
 theta = y(1,:);
-<<<<<<< HEAD
-=======
-angular_vel = y(2,:);
->>>>>>> c99e8543d99fb520056086defe562295db4015b4
 
 x_0 = 0; %We want to pendulum to be fixed at (0,0)
 y_0 = 0;
