@@ -6,10 +6,10 @@ T=20;
 n=500;
 L = 2;
 
-[t, y] = RK_method(x,n,T);
+[t, y] = RK_method_single_pendulum(x,n,T);
 
-% plot_theta(t,y)
-%figure
+plot_theta(t,y)
+figure
 plot_pendulum(y,L)
 
 %% Problem 5.2
@@ -18,7 +18,7 @@ T=20;
 n=500;
 L = 2;
 
-[t, y] = RK_method(x,n,T);
+[t, y] = RK_method_single_pendulum(x,n,T);
 
 plot_theta(t,y)
 %figure
