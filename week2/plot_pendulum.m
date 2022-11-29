@@ -2,7 +2,6 @@ function plot_pendulum(y,L)
 theta = y(1,:);
 angular_vel = y(2,:);
 
-
 x_0 = 0; %We want to pendulum to be fixed at (0,0)
 y_0 = 0;
 h=animatedline('Color','k','LineWidth',3);
