@@ -22,6 +22,4 @@ for i=1:length(theta)
     clearpoints(b)
   
 end
-
-
 end
