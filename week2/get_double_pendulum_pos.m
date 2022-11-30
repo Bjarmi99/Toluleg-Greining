@@ -1,5 +1,5 @@
 function pos = get_double_pendulum_pos(y,L1,L2)
-
+%DELETE THIS FUNCTION
 theta1 = y(1,:);
 theta2 = y(3,:);
 
