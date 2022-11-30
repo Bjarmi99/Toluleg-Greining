@@ -69,8 +69,7 @@ plot_double_pendulum(y,L1,L2)
 %theta1
 
 %% Problem 8 part 7
-% Here we changed the initial angles so the pendulum balances vertically
-% until some error happens... innvestigate better...
+% Here we changed the initial angles so the pendulum sta
 L1=2; L2=2; m1=1; m2=1;T=20;
 
 y0 = [pi;0;pi;0];
