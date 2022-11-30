@@ -32,16 +32,11 @@ for i=1:length(theta1)
     
     addpoints(line_1,[x_0_ball_1 x_1(i)],[y_0_ball_1 w_1(i)])
     addpoints(ball_1,x_1(i),w_1(i))
-
     addpoints(line_2,[x_1(i) x_2(i)],[w_1(i) w_2(i)])
     addpoints(ball_2,x_2(i),w_2(i))
-    addpoints(path_2,x_2(i),w_2(i))
-    
     addpoints(path_1,x_1(i),w_1(i))
-    
-    
-    
-    
+    addpoints(path_2,x_2(i),w_2(i))
+     
     drawnow
     clearpoints(line_1)
     clearpoints(ball_1)
