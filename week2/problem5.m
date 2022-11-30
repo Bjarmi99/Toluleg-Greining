@@ -21,5 +21,5 @@ L = 2;
 [t, y] = RK_method_single_pendulum(x,n,T);
 
 plot_theta(t,y)
-%figure
-%plot_pendulum(y,L)
+figure
+plot_pendulum(y,L)
