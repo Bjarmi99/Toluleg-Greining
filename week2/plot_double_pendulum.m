@@ -24,10 +24,6 @@ title('Double pendulum animation')
 
 plot(0,0,'.','MarkerSize',35, 'color','k')
 
-
-
-
-
 for i=1:length(theta1)
     
     addpoints(line_1,[x_0_ball_1 x_1(i)],[y_0_ball_1 w_1(i)])
@@ -38,9 +34,6 @@ for i=1:length(theta1)
     addpoints(path_2,x_2(i),w_2(i))
     
     addpoints(path_1,x_1(i),w_1(i))
-    
-    
-    
     
     drawnow
     clearpoints(line_1)
