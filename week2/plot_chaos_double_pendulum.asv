@@ -1,4 +1,4 @@
-function plot_chaos_double_pendulum(y1,y2,L1,L2,n,T)
+function plot_chaos_double_pendulum(y,y,L1,L2,n,T)
 
 theta1 = y1(1,:);
 theta2 = y1(3,:);

@@ -32,10 +32,10 @@ plot(0,0,'.','MarkerSize',35, 'color','k')
 %vidObj = VideoWriter('Double Pendulum animation 8.4'); 
 %vidObj = VideoWriter('Double Pendulum animation 8.5'); 
 %vidObj = VideoWriter('Double Pendulum animation 8.6'); 
-vidObj = VideoWriter('Double Pendulum animation 8.7'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.7'); 
 
-vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
-open(vidObj) %open the video object
+%vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
+%open(vidObj) %open the video object
 
 for i=1:length(theta1)
     
@@ -47,8 +47,8 @@ for i=1:length(theta1)
     addpoints(path_2,x_2(i),w_2(i))
      
     drawnow
-    frame = getframe(gcf); %capture figure as a movie frame
-    writeVideo(vidObj, frame) %writes the movie frames from the getframe function
+    %frame = getframe(gcf); %capture figure as a movie frame
+    %writeVideo(vidObj, frame) %writes the movie frames from the getframe function
 
     clearpoints(line_1)
     clearpoints(ball_1)
