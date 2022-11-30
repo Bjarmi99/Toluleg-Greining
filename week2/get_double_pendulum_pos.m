@@ -6,11 +6,11 @@ theta2 = y(3,:);
 x_0_ball_1 = 0; %We want to pendulum to be fixed at (0,0)
 y_0_ball_1 = 0;
 
-line_1 = animatedline('Color','k','LineWidth',3);
-line_2 = animatedline('Color','k','LineWidth',3);
-ball_2 = animatedline('Color','b','Marker','.','MarkerSize',35);
-%path_2 = animatedline('Color','b');
-ball_1 = animatedline('Color','r','Marker','.','MarkerSize',50);
+% line_1 = animatedline('Color','k','LineWidth',3);
+% line_2 = animatedline('Color','k','LineWidth',3);
+% ball_2 = animatedline('Color','b','Marker','.','MarkerSize',35);
+% %path_2 = animatedline('Color','b');
+% ball_1 = animatedline('Color','r','Marker','.','MarkerSize',50);
 %path_1 = animatedline('Color','r');
 
 axis([-5 5 -5 5])

@@ -77,4 +77,3 @@ y0 = [pi;0;pi;0];
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 plot_double_pendulum(y,L1,L2)
 
-

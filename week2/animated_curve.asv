@@ -1,0 +1,22 @@
+function animated_curve(y)
+
+theta1 = animatedline;
+theta2 = animatedline;
+
+axis([0,4*pi,-1,1])
+
+x = linspace(0,length(theta1),1000);
+y = sin(x);
+for k = 1:length(theta1)
+    addpoints(theta1,x(k),y(1,:));
+    addpoints(theta2,x(k),y(3,:));
+    
+    drawnow
+    
+end
+
+end
+
+
+
+
