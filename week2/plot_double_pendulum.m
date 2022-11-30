@@ -1,6 +1,7 @@
-function plot_double_pendulum(y,L1,L2)
+function plot_double_pendulum(y,L1,L2,n,T)
 theta1 = y(1,:);
 theta2 = y(3,:);
+figure %open figure for animation
 
 x_0_ball_1 = 0; %We want to pendulum to be fixed at (0,0)
 y_0_ball_1 = 0;
@@ -24,6 +25,18 @@ title('Double pendulum animation')
 
 plot(0,0,'.','MarkerSize',35, 'color','k')
 
+%vidObj = VideoWriter('Double Pendulum animation 7'); %create a video object, it will create an AVI file
+%vidObj = VideoWriter('Double Pendulum animation 8.1'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.2'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.3'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.4'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.5'); 
+%vidObj = VideoWriter('Double Pendulum animation 8.6'); 
+vidObj = VideoWriter('Double Pendulum animation 8.7'); 
+
+vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
+open(vidObj) %open the video object
+
 for i=1:length(theta1)
     
     addpoints(line_1,[x_0_ball_1 x_1(i)],[y_0_ball_1 w_1(i)])
@@ -34,6 +47,9 @@ for i=1:length(theta1)
     addpoints(path_2,x_2(i),w_2(i))
      
     drawnow
+    frame = getframe(gcf); %capture figure as a movie frame
+    writeVideo(vidObj, frame) %writes the movie frames from the getframe function
+
     clearpoints(line_1)
     clearpoints(ball_1)
     clearpoints(line_2)
@@ -41,5 +57,5 @@ for i=1:length(theta1)
   
 end
 
-
+close(vidObj) %close the video object
 end

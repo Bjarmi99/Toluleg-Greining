@@ -9,8 +9,8 @@ L = 2;
 [t, y] = RK_method_single_pendulum(x,n,T);
 
 plot_theta(t,y)
-figure
-plot_pendulum(y,L)
+%figure % we don't need figure here because we open figure in plot_pendulum
+plot_pendulum(y,L,n,T) %we need to call n and T for the FrameRate
 
 %% Problem 5.2
 x=[pi/2;0]; %Initial conditions
@@ -21,5 +21,5 @@ L = 2;
 [t, y] = RK_method_single_pendulum(x,n,T);
 
 plot_theta(t,y)
-figure
-plot_pendulum(y,L)
+%figure % we don't need figure here because we open figure in plot_pendulum
+plot_pendulum(y,L,n,T) %we need to call n and T for the FrameRate

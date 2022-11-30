@@ -14,7 +14,9 @@ title('Pendulum animation')
 plot([-0.5,0.5],[0,0],'linewidth',8, 'color','k')
 
 %vidObj = VideoWriter('Pendulum animation3'); %create a video object, it will create an AVI file, for problem 3
-vidObj = VideoWriter('Pendulum animation4'); %for problem 4
+%vidObj = VideoWriter('Pendulum animation4'); %for problem 4
+%vidObj = VideoWriter('Pendulum animation5.1'); %for problem 5.1
+vidObj = VideoWriter('Pendulum animation5.2'); %for problem 5.2
 vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
 open(vidObj) %open the video object
 
