@@ -1,10 +1,10 @@
-%% problem 10 maybe not use these initial values
+%% problem 10 maybe not use these initial values 
 close all; clear all;clc;
 
 L1=2; L2=2; m1=1; m2=1;T=50;
 
 y0 = [pi/3;0;pi/6;0];
-n = 1000;
+n = 10000;
 
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
@@ -20,7 +20,7 @@ y0 = [pi/2;0;pi/2;0];
 animated_curve(y)
 
 %% 10.2
-y0 = [pi/2;0;pi/6;0];
+y0 = [pi/2;0;pi/6;0]; 
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 animated_curve(y)

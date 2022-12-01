@@ -3,7 +3,7 @@ theta1 = y(1,:);
 theta2 = y(3,:);
 figure %open figure for animation
 
-x_0_ball_1 = 0; %We want to pendulum to be fixed at (0,0)
+x_0_ball_1 = 0; %We want the pendulum to be fixed at (0,0)
 y_0_ball_1 = 0;
 
 line_1 = animatedline('Color','k','LineWidth',3);
