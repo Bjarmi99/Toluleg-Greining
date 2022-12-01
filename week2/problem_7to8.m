@@ -44,17 +44,6 @@ y0 = [pi/3;0;pi/4;0];
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 
-%% Problem 8 part 5
-%Here we look at the effect of making the initial position of theta 2 being
-% even bigger than in problem 8 part 4
-
-
-y0 = [pi/3;0;pi/2;0];
-[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
-
-%Note it has less effect on the motion (chaos in the trajectories) increasing theta2 than increasing
-%theta1
 
 %% Problem 8 part 6
 %Here we look at the effect of making the initial position of theta 2 being

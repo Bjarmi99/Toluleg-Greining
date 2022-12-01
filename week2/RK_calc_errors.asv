@@ -1,19 +1,15 @@
-function [max_theta1_val max_theta2_val] = RK_calc_errors(y0,n,T,L1,L2,m1,m2);
-n_theoretical = 30000;
-[t y_true_val] = RK_method_double_pendulum(y0,n_theoretical,T,L1,L2,m1,m2);
-y_true_val = y_true_val';
+function [error n_vec] = RK_calc_errors(y0,n,T,L1,L2,m1,m2);
+n_theoretical = 30000; %many intervals so very precise values 
+[t y_true_val] = RK_method_double_pendulum(y0,n_theoretical,T,L1,L2,m1,m2); %y_true_val is the true value (theoretical)
+y_true_val = y_true_val'; 
 
-max_theta1_theoretical = y_true_val(n_theoretical+1,1);
-max_theta2_theoretical = y_true_val(n_theoretical+1,3);
+true_val = y_true_val(end,:); %we take the last line and all the colums to get the biggest error
 for i = 1:7
     [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
     y = y';
-    max_theta1_val = y(n+1,1);
-    max_theta2_val(i) = y(n+1,3);
-    n = n*2;
-    error1(i,1) = abs(max_theta1_val-max_theta1_theoretical);
-    error2(i,1) = abs(max_theta1_val-max_theta1_theoretical);
-      
+    error(i) = norm(y(end,:) - true_val);
+    n_vec(i) = n;
+    n = n*2;  
 end
 
 
