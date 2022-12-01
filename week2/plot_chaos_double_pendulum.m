@@ -24,8 +24,8 @@ line_11 = animatedline('Color','k','LineWidth',3);
 line_22 = animatedline('Color','k','LineWidth',3);
 ball_22 = animatedline('Color','b','Marker','.','MarkerSize',35);
 path_22 = animatedline('Color','b');
-ball_12 = animatedline('Color','r','Marker','.','MarkerSize',50);
-path_12 = animatedline('Color','r');
+ball_11 = animatedline('Color','r','Marker','.','MarkerSize',50);
+path_11 = animatedline('Color','r');
 
 %%%%%%%%% FOR PENDULI 1 %%%%%%%%%
 axis([-5 5 -5 5])
@@ -91,6 +91,6 @@ for i=1:length(theta1)
   
 end
 
-close(vidObj) %close the video object
+%close(vidObj) %close the video object
 
 end

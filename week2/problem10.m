@@ -11,7 +11,7 @@ n = 1000;
 animated_curve(y)
 
 %We can see that it is filling this rectangle it is nearly always going the
-%same path but nearly neaver in exactly his old paths .... 
+%same path but nearly neaver in exactly his old paths or in the end he nearly does go exactly in his path.... 
 
 %% Run for different initial values and analyse
 
