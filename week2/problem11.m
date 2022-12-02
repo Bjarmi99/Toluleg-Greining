@@ -5,6 +5,8 @@ L1=2; L2=2; m1=1; m2=1;
 y0 = [2*pi/3;0;pi/6;0];
 n = 2000;
 T = 40;
+% THE ERROR ACCUMULATES AND AT SOME POINT IT IS SO MUCH THAT THE PENDULI GO
+% TO CHAOS
 [t1 y1] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 
 for k = 1:5
@@ -32,12 +34,15 @@ y2=y2';
 
 figure
 subplot(2,1,1)
+
 plot(t1,abs(y1(:,1)-y2(:,1)),'LineWidth',1.2) % plotting the difference between the actual theta1 value and the theta1 with the epsilon error
+>>>>>>> Stashed changes
 ylabel('Displacement on \theta_1 angles')
 xlabel('Time[s]')
 legend('\theta_1 - (\theta_1 + \epsilon)','Location','best')
 
 subplot(2,1,2)
+plot(t2,abs(y1(:,3)-y2(:,3)),'LineWidth',1.2) % plotting the difference between the actual theta2 value and the theta2 with the epsilon error
 ylabel('Displacement on \theta_2 angles')
 xlabel('Time[s]')
 legend('\theta_2 - (\theta_2 + \epsilon)','Location','best')
