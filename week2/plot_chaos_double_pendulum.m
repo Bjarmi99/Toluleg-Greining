@@ -1,8 +1,9 @@
 function plot_chaos_double_pendulum(y1,y2,L1,L2,n,T)
-
+% 1 %
 theta1 = y1(1,:);
 theta2 = y1(3,:);
 
+% 2 %
 theta11 = y2(1,:);
 theta22 = y2(3,:);
 
@@ -52,7 +53,7 @@ plot(0,0,'.','MarkerSize',35, 'color','k')
 %open(vidObj) %open the video object
 
 for i=1:length(theta1)
-    
+    %%%% 1 %%%%
     addpoints(line_1,[x_0_ball_1 x_1(i)],[y_0_ball_1 w_1(i)])
     addpoints(ball_1,x_1(i),w_1(i))
     addpoints(line_2,[x_1(i) x_2(i)],[w_1(i) w_2(i)])
@@ -60,6 +61,7 @@ for i=1:length(theta1)
     addpoints(path_1,x_1(i),w_1(i))
     addpoints(path_2,x_2(i),w_2(i))
      
+    %%%% 2 %%%%
     addpoints(line_11,[x_0_ball_1 x_11(i)],[y_0_ball_1 w_11(i)])
     addpoints(ball_11,x_11(i),w_11(i))
     addpoints(line_22,[x_11(i) x_22(i)],[w_11(i) w_22(i)])
