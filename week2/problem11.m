@@ -5,7 +5,6 @@ L1=2; L2=2; m1=1; m2=1;
 y0 = [2*pi/3;0;pi/6;0];
 n = 2000;
 T = 40;
-
 [t1 y1] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 
 for k = 1:5
@@ -39,7 +38,6 @@ xlabel('Time[s]')
 legend('\theta_1 - (\theta_1 + \epsilon)','Location','best')
 
 subplot(2,1,2)
-plot(t2,abs(y1(:,3)-y2(:,3)),'r','LineWidth',1.2) % plotting the difference between the actual theta2 value and the theta2 with the epsilon error
 ylabel('Displacement on \theta_2 angles')
 xlabel('Time[s]')
 legend('\theta_2 - (\theta_2 + \epsilon)','Location','best')
