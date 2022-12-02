@@ -36,6 +36,8 @@ figure
 subplot(2,1,1)
 
 plot(t1,abs(y1(:,1)-y2(:,1)),'LineWidth',1.2) % plotting the difference between the actual theta1 value and the theta1 with the epsilon error
+
+plot(t1,abs(y1(:,1)-y2(:,1)),'r','LineWidth',1.2) % plotting the difference between the actual theta2 value and the theta2 with the epsilon error
 >>>>>>> Stashed changes
 ylabel('Displacement on \theta_1 angles')
 xlabel('Time[s]')
