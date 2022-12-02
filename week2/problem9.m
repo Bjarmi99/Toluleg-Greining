@@ -1,4 +1,4 @@
-%% Problem 9 maybe we don't need these initial values since we are comparing to problems in 8
+%% Problem 9 
 clear all; close all; clc;
 
 L1=2; L2=2; m1=1; m2=1;T=20;
@@ -29,16 +29,6 @@ legend('Errors','Fitted line')
 
 
 %% 9.1
-
-
-%can do like this: (rand-0.5)*pi where rand is a random number between 0-1
-
-%for example 100 different random initial values and use them for 7
-%different n's get the slope for each random initial values (10 slopes) and
-%show it on a histogram (distribution of the slopes)
-%%%% OR %%%%
-%Input different theta values and get all the slopes and analyse what gives
-%the best, worst...... easier to analyse this says Olivier
 
 y0 = [pi/2;0;pi/2;0];
 
@@ -133,7 +123,7 @@ text(xt, yt, caption, 'FontSize', 9, 'Color', 'k');
 ylabel('log(Error)')
 xlabel('log(n)')
 legend('Errors','Fitted line')
-%% 9.6 (like part 6 in 8)
+%% 9.5 (like part 5 in 8)
 
 y0 = [pi/3;0;pi;0];
 
@@ -156,7 +146,7 @@ ylabel('log(Error)')
 xlabel('log(n)')
 legend('Errors','Fitted line')
 
-%% 9.7
+%% 9.6
 
 y0 = [pi;0;pi;0];
 

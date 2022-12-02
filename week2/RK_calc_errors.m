@@ -11,8 +11,4 @@ for i = 1:7
     n_vec(i) = n; % keep all the different n values that are used
     n = n*2;  
 end
-
-
-
-
 end
