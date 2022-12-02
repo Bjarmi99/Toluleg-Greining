@@ -1,10 +1,10 @@
-%% problem 10
+%% problem 10 
 close all; clear all;clc;
 
 L1=2; L2=2; m1=1; m2=1;T=50;
 
-y0 = [pi/3;0;pi/6;0];
-n = 1000;
+y0 = [pi/30;0;pi/30;0];
+n = 10000;
 
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
@@ -13,8 +13,44 @@ animated_curve(y)
 %We can see that it is filling this rectangle it is nearly always going the
 %same path but nearly neaver in exactly his old paths or in the end he nearly does go exactly in his path.... 
 
-%% Run for different initial values and analyse
-y0 = [pi/3;0;pi/6;0];
+%% 10.1    Run for different initial values and analyse 
+y0 = [pi/30;0;pi/10;0];
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.3    Run for different initial values and analyse 
+y0 = [pi/30;0;pi/2;0];
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.2
+y0 = [pi/3;0;pi/6;0]; 
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.3
+y0 = [pi/1.5;0;pi/6;0];
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.4
+y0 = [pi/3;0;pi/4;0];
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.5
+y0 = [pi/3;0;pi;0];
+
+[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
+animated_curve(y)
+
+%% 10.6
+y0 = [pi;0;pi;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 animated_curve(y)
