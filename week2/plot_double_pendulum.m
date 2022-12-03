@@ -13,7 +13,7 @@ path_2 = animatedline('Color','b');
 ball_1 = animatedline('Color','r','Marker','.','MarkerSize',50);
 path_1 = animatedline('Color','r');
 
-axis([-5 5 -5 5])
+axis([-5 5 -5 5]*1.3)
 x_1 = L1*sin(theta1); %trigonometric functions
 w_1 = -L1*cos(theta1);
 
@@ -57,5 +57,5 @@ for i=1:length(theta1)
   
 end
 
-close(vidObj) %close the video object
+%close(vidObj) %close the video object
 end
