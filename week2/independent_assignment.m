@@ -1,4 +1,4 @@
-%% Independent assignment NORMAL
+%% 1. Independent assignment NORMAL
 close all; clear all; clc;
 
 L1=2; L2=2; m1=1; m2=1;T=50;
@@ -11,12 +11,12 @@ n = 2000;
 plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 animated_curve(y,n,T)
 
-%HERE IS A DEMONSTRATION ON HOW THE DOUBLE PENDULUM BEHAVES IF THE INITIAL VALUES ARE THE SAME AS IN EXAMPLE 8.4?
+%HERE IS A DEMONSTRATION ON HOW THE DOUBLE PENDULUM BEHAVES IF THE INITIAL VALUES ARE THE SAME AS IN EXAMPLE 8.4
 %AND THE MOVEMENT IS NOT VERY CHAOTIC AND SINCE THE INITIAL ANGLE IS NOT TO
 %BIG THE MOVEMENT IS PREDICTABLE
 
 %IN THE NEXT EMAPLES WE ALLWAYS USE THE SAME INITIAL VALUES ON THE POSITION
-%% Independent assignment with L1 longer than L2
+%% 2. Independent assignment with L1 longer than L2
 close all; clear all; clc;
 
 L1=4; L2=2; m1=1; m2=1;T=50;
@@ -35,7 +35,7 @@ animated_curve(y,n,T)
 %(NEARLY GOES ALLWAS IN THE SAME PATH)
 
 
-%% Independent assignment with L2 longer than L1
+%% 3. Independent assignment with L2 longer than L1
 close all; clear all; clc;
 
 L1=2; L2=4; m1=1; m2=1;T=50;
@@ -53,7 +53,7 @@ animated_curve(y,n,T) %we need to call n and T for the FrameRate
 %THAN THE L2 BUT STILL IT IS PREDICTABLE AND HAS A NICE PERIODIC MOVEMENT
 %AS SHOWN IN THE GRAPH (ANIMATED CURVE)
 
-%% Independent assignment with L1 longer than L2 AND m1 has more weight than m2
+%% 4. Independent assignment with L1 longer than L2 AND m1 has more weight than m2
 close all; clear all; clc;
 
 L1=4; L2=2; m1=50; m2=1;T=50;
@@ -69,7 +69,7 @@ animated_curve(y,n,T)
 %MORE CHAOS HAPPENS AND THE LOWER PENDULUM GOES IN MANY CIRCLES MORE
 %UNPREDICTABLE
 
-%% Independent assignment with L2 longer than L1 AND m2 has more weight than m1
+%% 5. Independent assignment with L2 longer than L1 AND m2 has more weight than m1
 close all; clear all; clc;
 
 L1=2; L2=4; m1=1; m2=50;T=50;
