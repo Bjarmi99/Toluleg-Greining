@@ -12,7 +12,6 @@ L=2;
 
 plot_theta(t,y)%plot theta
 hold off
-%figure % we don't need figure here because we open figure in plot_pendulum
 plot_pendulum(y,L,n,T) %plot the pendulum, we need to call n and T for the FrameRate
 
 
@@ -23,9 +22,6 @@ plot_pendulum(y,L,n,T) %plot the pendulum, we need to call n and T for the Frame
 % figure
 % plot_pendulum(y1,L,n,T) %plot the pendulum
 
-% %now we draw the animation, it is supposed to stay in a constant
-% %oscillation but because it is an approximation method then the oscillation
-% %is alway increasing
 
 %% Problem 4
 clear all; close all; clc;

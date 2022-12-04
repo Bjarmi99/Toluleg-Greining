@@ -5,8 +5,7 @@ L1=2; L2=2; m1=1; m2=1;
 y0 = [2*pi/3;0;pi/6;0];
 n = 2000;
 T = 40;
-% THE ERROR ACCUMULATES AND AT SOME POINT IT IS SO MUCH THAT THE PENDULI GO
-% TO CHAOS
+
 [t1 y1] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 
 for k = 1:5

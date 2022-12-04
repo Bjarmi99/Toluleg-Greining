@@ -26,7 +26,6 @@ title('Double pendulum animation')
 plot(0,0,'.','MarkerSize',35, 'color','k')
 
 %vidObj = VideoWriter('Double Pendulum animation'); %create a video object, it will create an AVI file
-
 %vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
 %open(vidObj) %open the video object
 

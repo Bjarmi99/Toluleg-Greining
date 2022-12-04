@@ -19,9 +19,6 @@ plot_pendulum(y,L) %plot the pendulum
 % figure
 % plot_pendulum(y1,L) %plot the pendulum
 
-% %now we draw the animation, it is supposed to stay in a constant
-% %oscillation but because it is an approximation method then the oscillation
-% %is alway increasing
 
 %% Problem 4
 clear all; close all; clc;
@@ -48,8 +45,6 @@ plot_pendulum(y,L) %plot the pendulum
 % plot_pendulum(y1,L) %plot the pendulum
 
 
-%% Problem 5
-clear all; close all; clc;
 
 
 

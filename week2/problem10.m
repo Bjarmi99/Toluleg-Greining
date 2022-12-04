@@ -12,8 +12,6 @@ animated_curve(y,n,T) %we need to call n and T for the FrameRate
 %plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 
 
-%We can see that it is filling this rectangle it is nearly always going the
-%same path but nearly neaver in exactly his old paths or in the end he nearly does go exactly in his path.... 
 
 %% 10.1a    %increase theta2
 y0 = [pi/30;0;pi/10;0];
