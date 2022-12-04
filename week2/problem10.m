@@ -9,6 +9,7 @@ n = 10000;
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 animated_curve(y,n,T) %we need to call n and T for the FrameRate 
+%plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 
 
 %We can see that it is filling this rectangle it is nearly always going the
@@ -67,4 +68,5 @@ y0 = [pi;0;pi/2;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
 animated_curve(y,n,T) %we need to call n and T for the FrameRate
+%plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 

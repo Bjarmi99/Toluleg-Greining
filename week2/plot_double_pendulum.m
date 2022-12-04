@@ -25,14 +25,7 @@ title('Double pendulum animation')
 
 plot(0,0,'.','MarkerSize',35, 'color','k')
 
-%vidObj = VideoWriter('Double Pendulum animation 7'); %create a video object, it will create an AVI file
-%vidObj = VideoWriter('Double Pendulum animation 8.1'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.2'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.3'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.4'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.5'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.6'); 
-%vidObj = VideoWriter('Double Pendulum animation 8.7'); 
+%vidObj = VideoWriter('Double Pendulum animation'); %create a video object, it will create an AVI file
 
 %vidObj.FrameRate = n/T; %frame rate set to number of steps/time interval
 %open(vidObj) %open the video object
