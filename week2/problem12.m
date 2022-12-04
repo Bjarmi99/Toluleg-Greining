@@ -17,7 +17,7 @@ for k = 1:12
     y2=y2';
     
     for i = 1:length(y2(:,1))
-        if abs(y1(i,3)-y2(i,3)) > 0.1 %there is allways a minor displacement so we decided to detect when the displacement of the angles is more than 0.1
+        if abs(y1(i,3)-y2(i,3)) > 0.1 %there is always a minor displacement so we decided to detect when the displacement of the angles is more than 0.1
             time_vec(counter) = t2(i);
             counter = counter + 1;
             break;
@@ -40,7 +40,7 @@ legend('Displacement of the pendulums at time interval T','Location','Best')
 
 %% PROBLEM 12 - METHOD PRECISION (CHANGING THE VALUE OF N)
 % IF WE HAVE A SMALL N THE CALCULATIONS WILL BE MORE UNRELIABLE
-% SHOW HOW THE GRAPH CHANGES IF THE N IS CHANGED (CHANGE N VERY MUTCH) SHOW
+% SHOW HOW THE GRAPH CHANGES IF THE N IS CHANGED (CHANGE N VERY MUCH) SHOW
 % IT IN SUBPLOT MAYBE 4 DIFFERENT ONES WITH DIFFERENT N'S
 
 
@@ -129,7 +129,7 @@ end
 %DISPLACEMENT_VEC: HOLD THE VALUES OF THE THETA DISPLACEMENT WHEN K = 12
                    %WHICH IS AT TIME INTERVAL T = 40
 
-%THE BIGGER THE THETA'S ARE THE MORE ENERGY IS IN THE SYSTSEM AT TIME = 0
+%THE BIGGER THE THETA'S ARE THE MORE ENERGY IS IN THE SYSTEM AT TIME = 0
 %THE HARDER IT IS TO APPROXIMATE HOW THE DOUBLE PENDULUM BEHAVES
 
 
