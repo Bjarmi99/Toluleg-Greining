@@ -3,7 +3,7 @@ close all; clear all;clc;
 
 L1=2; L2=2; m1=1; m2=1;T=50;
 
-y0 = [pi/30;0;pi/30;0];   %almost a perfect square
+y0 = [pi/30;0;pi/30;0];   %almost a perfect rectangle
 n = 10000;
 
 
@@ -18,58 +18,53 @@ animated_curve(y,n,T) %we need to call n and T for the FrameRate
 y0 = [pi/30;0;pi/10;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
 %% 10.1b    %increase theta2 more
 y0 = [pi/30;0;pi/2;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
 %% 10.2a   %increase theta1
 y0 = [pi/10;0;pi/30;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
 %% 10.2b    %increase theta1 more
 y0 = [pi/2;0;pi/30;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
-%% 10.3   %bigger angles, looks like a bent square
+%% 10.3   %bigger angles
 y0 = [pi/3;0;pi/6;0]; 
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
-%% 10.4     %theta2 goes from 0 to -85,
+%% 10.4     
 y0 = [pi/1.5;0;pi/6;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
-%% 10.5     %only two lines, looks like a worm
+%% 10.5     
 y0 = [pi/3;0;pi/3;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
 %% 10.6
 y0 = [pi/3;0;pi;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
 
-%% 10.7     %really random outcome
-y0 = [pi/1;0;pi/2;0];
-
-[t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
-
-%% 10.8     %doesn't show anything
-y0 = [pi/1.5;0;pi/1.5;0];
+%% 10.7     
+y0 = [pi;0;pi/2;0];
 
 [t y] = RK_method_double_pendulum(y0,n,T,L1,L2,m1,m2);
-animated_curve(y)
+animated_curve(y,n,T) %we need to call n and T for the FrameRate
+
