@@ -1,3 +1,4 @@
+%% Problem 3
 clear all; close all; clc;
 %In problem 2 the code was written, in problem 3 the initial conditions
 %were set and the outcome plotted
@@ -35,7 +36,7 @@ T=20;
 n=500;
 L=2;
 
-[t,y]=Euler_func_multi(x,n,T)
+[t,y]=Euler_func_multi(x,n,T);
 
 plot_theta(t,y)%plot theta
 hold off
@@ -51,8 +52,7 @@ plot_pendulum(y,L,n,T) %plot the pendulum, we need to call n and T for the Frame
 % plot_pendulum(y1,L,n,T) %plot the pendulum
 
 
-%% Problem 5
-clear all; close all; clc;
+
 
 
 

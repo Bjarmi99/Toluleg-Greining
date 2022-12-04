@@ -67,7 +67,7 @@ plot_double_pendulum(y,L1,L2,n,T) %we need to call n and T for the FrameRate
 animated_curve(y,n,T)
 
 %MORE CHAOS HAPPENS AND THE LOWER PENDULUM GOES IN MANY CIRCLES MORE
-%UNPREDICTABLE...
+%UNPREDICTABLE
 
 %% Independent assignment with L2 longer than L1 AND m2 has more weight than m1
 close all; clear all; clc;
