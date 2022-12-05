@@ -39,7 +39,7 @@ title(['n = ',num2str(n)]) %prints the title with each n used
 legend('approximate', 'real')
 
 
-%% use bigger n
+%% bigger n
 n = 20;
 T = 1;
 
