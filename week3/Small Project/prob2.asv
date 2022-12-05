@@ -1,4 +1,4 @@
-%% small n
+%%
 close all; clear all; clc;
 T = 1;
 n = 2;
@@ -35,14 +35,13 @@ subplot(2,1,1)
 plot(x,y,'r')
 hold on 
 plot(x_real,y_real,'b')
-title(['n = ',num2str(n)]) %prints the title with each n used
 legend('approximate', 'real')
 
 
-%% use bigger n
+%%
 n = 20;
 T = 1;
-
+n 
 h = T/n;
 
 
@@ -70,11 +69,9 @@ for j = 1:length(x_real)
 y_real(j) = -0.5820*exp(x_real(j)) + 1.5820*exp(-x_real(j));
 end
 
-y = A\b;
 
 subplot(2,1,2)
 plot(x,y,'r')
 hold on 
 plot(x_real,y_real,'b')
-title(['n = ',num2str(n)]) %prints the title with each n used
 legend('approximate', 'real')
