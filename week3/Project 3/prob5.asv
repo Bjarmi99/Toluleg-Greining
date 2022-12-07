@@ -6,7 +6,7 @@ n = 20; %values from Problem 4
 
 v = (A\b)+20;
 v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
-v_matrix = v_matrix';
+
 [X,Y] = meshgrid(1:m,1:n);
 
 

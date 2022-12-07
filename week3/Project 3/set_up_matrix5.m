@@ -29,7 +29,7 @@ end
 %Left boundary no power
 for j = ratio:n
    i = 1; eq = i+(j-1)*m;
-   A(eq,eq) = -3+((2*h*H)/K)
+   A(eq,eq) = -3+((2*h*H)/K);
    A(eq,eq+1) = 4;
    A(eq,eq+2) = -1;
 end
