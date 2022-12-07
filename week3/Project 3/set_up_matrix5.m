@@ -3,6 +3,7 @@ P = 5; %W
 L = 1; %cm
 Lx = 2;
 Ly = 2;
+ratio = L/Ly *n;
 delta = 0.1; %cm
 h = Lx/(m-1);
 k = Ly/(n-1);
@@ -26,7 +27,7 @@ end
         
 
 %Left boundary no power
-for j = L+1:n
+for j = ratio:n
    i = 1; eq = i+(j-1)*m;
    A(eq,eq) = -3+((2*h*H)/K)
    A(eq,eq+1) = 4;
@@ -35,7 +36,7 @@ end
 
 
 %Left boundary (All power)
-for j = 1:L   %LATER USE n = L
+for j = 1:ratio   %LATER USE n = L
    i = 1; eq = i+(j-1)*m;
    A(eq,eq) = -3;
    A(eq,eq+1) = 4;
