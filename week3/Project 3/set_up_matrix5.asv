@@ -27,7 +27,7 @@ end
         
 
 %Left boundary no power
-for j = ratio+1:n %changed ratio to ratio + 1 (works the same)
+for j = ratio+1:n
    i = 1; eq = i+(j-1)*m;
    A(eq,eq) = -3+((2*h*H)/K);
    A(eq,eq+1) = 4;

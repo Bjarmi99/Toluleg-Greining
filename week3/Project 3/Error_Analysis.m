@@ -59,13 +59,14 @@ for i = 1:length(wanted_values)
     v_matrix = reshape(v(1:m*n),m,n);
     
     if line < 0.5
-        time(counter,1) = i;
+        time(counter,1) = i; %column one displays in which line the most efficient values appears in,in 
         time(counter,2) = line;
         counter = counter + 1;
     end
 
 end
 
-
+efficient_val = wanted_values(9,1:2);
+fprintf('\n\nThe most efficient values were\n m = %.f\n n = %.f\n',efficient_val(1), efficient_val(2))
 
 
