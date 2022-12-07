@@ -15,7 +15,7 @@ b = zeros(m*n,1);
 for i = 2:m-1
     for j = 2:n-1
         eq = i + (j-1)*m;
-        A(eq,eq) = -((2/h^2) + (2/k^2) - (2*H/(K*delta))); %%%%
+        A(eq,eq) = -((2/h^2) + (2/k^2) + (2*H/(K*delta))); %%%%
         A(eq,eq+1) = 1/h^2;
         A(eq,eq-1) = 1/h^2;
         A(eq,eq+m) = 1/k^2;%%%%%
@@ -40,7 +40,7 @@ for j = 1:n   %LATER USE n = L
    A(eq,eq) = -3;
    A(eq,eq+1) = 4;
    A(eq,eq+2) = -1;
-   b(eq) = (2*h*P)/(L*delta*K); %%%%
+   b(eq) = (-2*h*P)/(L*delta*K);
 end
 
 %RIGHT BOUNDARY
