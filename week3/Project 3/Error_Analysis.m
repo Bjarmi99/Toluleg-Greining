@@ -67,6 +67,24 @@ for i = 1:length(wanted_values)
 end
 
 efficient_val = wanted_values(9,1:2);
+
+%% printing correct values
+
+n_matter1 = compare_vec(1,1);
+
+n_matter2 = compare_vec(end,1);
+
+m_matter1 = compare_vec(1,1);
+m_matter2 = compare_vec(1,end);
+
+
+fprintf('\nWhen m = 10 and n = 10 we get the error: %.4f',n_matter1)
+fprintf('\nWhen m = 10 and n = 90 we get the error: %.4f',n_matter2)
+
+fprintf('\nWhen n = 10 and m = 10 we get the error: %.4f',m_matter1)
+fprintf('\nWhen n = 10 and m = 90 we get the error: %.4f',m_matter2)
+
+
 fprintf('\n\nThe most efficient values were\n m = %.f\n n = %.f\n',efficient_val(1), efficient_val(2))
 
 
