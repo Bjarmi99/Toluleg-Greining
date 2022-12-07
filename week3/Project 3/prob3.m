@@ -1,7 +1,7 @@
 close all; clear all; clc;
 m = 10;
 n = 10;
-
+ 
 [A,b] = set_up_matrix(m,n);
 
 v = (A\b)+20;
