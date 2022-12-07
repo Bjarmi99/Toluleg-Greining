@@ -1,5 +1,8 @@
-function [A b] = set_up_matrix5(m,n,L,Lx,Ly)
+function [A b] = set_up_matrix5(m,n,L)
 P = 5; %W
+L = 2; %cm
+Lx = 4;
+Ly = 4;
 ratio = (L/Ly)*n; %scaling the y axis to position the power source
 delta = 0.1; %cm
 h = Lx/(m-1);
