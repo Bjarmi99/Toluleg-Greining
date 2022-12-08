@@ -18,6 +18,7 @@ for i = 0:k:P
     [X,Y] = meshgrid(1:m,1:n);
 
 
+<<<<<<< Updated upstream
     mesh(X,Y,v_matrix)
     colorbar
 
@@ -33,4 +34,16 @@ end
 % v = (A\b)+20;
 % v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
 % v_matrix = v_matrix';
+=======
+%L = 0; %cm
+counter = 1;
+for i = 0:4
+    [A,b] = set_up_matrix5(m,n,i,Lx,Ly,L0);
+    v = (A\b)+20;
+    v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
+    v_matrix = v_matrix';
+    v_highest(counter) = v_matrix(1,1);
+    counter = counter + 1;
+end
+>>>>>>> Stashed changes
 
