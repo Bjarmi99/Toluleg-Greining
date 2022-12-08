@@ -3,8 +3,6 @@ ratio = (L/Ly)*n; %scaling the y axis to position the power source
 delta = 0.1; %cm
 h = Lx/(m-1);
 k = Ly/(n-1);
-H = 0.005; %W/cm^2 * C°
-K = 1.68; %W/cm^2 * C°
 A = zeros(m*n,m*n);
 b = zeros(m*n,1);
 

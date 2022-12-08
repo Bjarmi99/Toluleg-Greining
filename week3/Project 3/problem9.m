@@ -8,8 +8,8 @@ n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;
 L = 2;
-x = 4;
-y = 4;
+x = 10;
+y = 10;
 
 %L = 0; %cm
 counter = 1;

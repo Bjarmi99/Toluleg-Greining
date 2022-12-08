@@ -16,10 +16,9 @@ P = linspace(8,9,1000);
 for i = 1:length(P)
     [A,b] = test(m,n,P(i),H,K,L,Lx,Ly,move);
     v = (A\b)+20;
-    if max(v) <= 99.98
+    if max(v) <= 100
         max_P(i) = P(i);
-    end
-    
+    end 
 end
 
 [A,b] = test(m,n,max(max_P),H,K,L,Lx,Ly,move);
