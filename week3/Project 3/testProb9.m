@@ -33,18 +33,18 @@ for i = 2:m-1-x
     end
 end
 
-% %INNER MATRIX for x-y
-% for i = m-x+1:m
-%     for j = n-y+1:n
-%         eq = i + (j-1)*m;
-%         A(eq,eq) = -((2/h^2) + (2/k^2) + (2*H/(K*delta)));
-%         A(eq,eq+1) = 0;
-%         A(eq,eq-1) = 0;
-%         A(eq,eq+m) = 0;
-%         A(eq,eq-m) = 0;
-% 
-%     end
-% end
+%INNER MATRIX for x-y
+for i = m-x+1:m
+    for j = n-y+1:n
+        eq = i + (j-1)*m;
+        A(eq,eq) = -((2/h^2) + (2/k^2) + (2*H/(K*delta)));
+        A(eq,eq+1) = 0;
+        A(eq,eq-1) = 0;
+        A(eq,eq+m) = 0;
+        A(eq,eq-m) = 0;
+
+    end
+end
 
 
                
@@ -169,7 +169,7 @@ for i = 2:m-1-x
 end
 
 %TOP BOUNDARY for x
-for i = m-1-x:m-1
+for i = m+1-x:m-1
    j = n-y; eq = i+(j-1)*m;
    A(eq,eq) = -3+((2*k*H)/K);
    A(eq,eq-m) = 4;
