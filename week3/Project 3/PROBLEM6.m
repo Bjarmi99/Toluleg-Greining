@@ -9,7 +9,6 @@ Lx = 4;
 Ly = 4;
 L = 2;
 
-%L = 0; %cm
 counter = 1;
 for i = 0:n/2
     [A,b] = test(m,n,P,H,K,L,Lx,Ly,i);

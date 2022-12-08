@@ -1,4 +1,4 @@
-%% Problem 7
+%% Problem 7 with bisection method
 close all; clear all; clc;
 
 
@@ -10,20 +10,15 @@ Lx = 4;
 Ly = 4;
 L = 2;
 move = 5; %posision where the heat starts to enter
+a = 5; %minimum power
+b = 10; %maximum power
+tol = 10^-3;
 
-P = linspace(8,9,1000);
+max_power_allowed = bisect3(a,b,tol,m,n,H,K,L,Lx,Ly,move);
 
-for i = 1:length(P)
-    [A,b] = test(m,n,P(i),H,K,L,Lx,Ly,move);
-    v = (A\b)+20;
-    if max(v) <= 100
-        max_P(i) = P(i);
-    end 
-end
+T = calc_max_temp(m,n,max_power_allowed,H,K,L,Lx,Ly,move)+100; 
+%have to add 100 to the T value since it is a midpoint (zero)
 
-[A,b] = test(m,n,max(max_P),H,K,L,Lx,Ly,move);
-v = (A\b)+20;
-max(v)
+fprintf('\nThe maximum power allowed is: %.3f W\nWich results in maximum plate temperature: %.3f°C\n',max_power_allowed,T)
 
-%PRINT THE MAX TEMP AND THE MAX P WE GOT
-% DO A PLOT ALSO.... TEMP ON Y AXIS AND POWER ON X AXIS
+
