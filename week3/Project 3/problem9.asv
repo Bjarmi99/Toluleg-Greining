@@ -12,15 +12,14 @@ x = 10;
 y = 10;
 Extrernal_temp = 20;
 
+%L = 0; %cm
 counter = 1;
 for i = 0:n/2
     [A,b] = set_up_matrix9(m,n,P,H,K,L,Lx,Ly,i, x, y);
     v = (A\b);
-    for index = 1:length(v)
-        if v(index) < 0.00001
-            v(index) = NaN;
-        else
-            v(index) = v(index)+Extrernal_temp;
+    for elf = 1:length(v)
+        if v(elf) == 0
+            v(elf) = NaN;
         end
     end
     
@@ -38,7 +37,7 @@ for i = 0:n/2
 end
 
 figure
-plot(0:10,v_highest(:,1),'r-o') 
-ylabel('Temperature [C°]')
+plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
+ylabel('Temperature [CÂ°]')
 xlabel('n steps')
 legend('Higest temperature of each iteration','Location','Best')

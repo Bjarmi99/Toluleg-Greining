@@ -88,5 +88,4 @@ fprintf('\nWhen n = 10 and m = 90 we get the error: %.4f',m_matter2)
 
 
 fprintf('\n\nThe most efficient values were\n m = %.f\n n = %.f\n',efficient_val(1), efficient_val(2))
-%%%%%%%%%%%%%%%%%%% FPRINF --> SHOW ALSO THE TEMPERATURE CHANGE AND RUNNING TIME WE CHOSE %%%%%%%%%%%%%%%%%%%%%
 fprintf('\nWhere these m,n values give the temperature change: %.4f°C\nAnd the running time is: %.4fs\n',chosen_temperature_deviation,min(time(:,2)))

@@ -3,7 +3,7 @@ close all; clear all; clc;
 
 %H = 0.005;
 K = 1.68;
-m = 40;
+m = 50;
 n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;
@@ -32,7 +32,7 @@ xlabel('H [W/cm^{2}°C]')
 
 %%  Independent problem PART 2
 close all; clear all; clc;
-
+P = 5;
 H = 0.005; %W/cm^2 * C°
 K = 1.68; %W/cm^2 * C°
 m = 50;
@@ -40,7 +40,7 @@ n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;
 L = 2;
-move = 5; %posision where the heat starts to enter
+move = 0; %posision where the heat starts to enter
  
 [A,b] = set_up_the_matrix_independent(m,n,P,H,K,L,Lx,Ly,move);
 
