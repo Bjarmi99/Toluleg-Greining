@@ -1,4 +1,4 @@
-function [A b] = testProb9(m,n,P,H,K,L,Lx,Ly,move, x, y)
+function [A b] = set_up_matrix9(m,n,P,H,K,L,Lx,Ly,move, x, y)
 ratio = (L/Ly)*n; %scaling the y axis to position the power source
 delta = 0.1; %cm
 h = Lx/(m-1);

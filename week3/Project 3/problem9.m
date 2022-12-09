@@ -8,13 +8,13 @@ n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;
 L = 2;
-x = 4;
-y = 4;
+x = 10;
+y = 10;
 
 %L = 0; %cm
 counter = 1;
 for i = 0:n/2
-    [A,b] = testProb9(m,n,P,H,K,L,Lx,Ly,i, x, y);
+    [A,b] = set_up_matrix9(m,n,P,H,K,L,Lx,Ly,i, x, y);
     v = (A\b)+20;
     v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
     v_matrix = v_matrix';
@@ -30,7 +30,7 @@ for i = 0:n/2
 end
 
 figure
-plot(0:10,v_highest(:,1),'r*') %DOUBLE CHECK IF THIS IS CORRECT
+plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
 ylabel('Temperature [C°]')
-xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate', 'FontSize', 9)
-legend('Higest temperature','Location','Best')
+xlabel('n steps')
+legend('Higest temperature of each iteration','Location','Best')
