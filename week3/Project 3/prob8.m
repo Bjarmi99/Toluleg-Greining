@@ -24,5 +24,5 @@ end
 
 plot(K_vec,P_vec,'LineWidth',1.5)
 ylabel('Maximum Power allowed [W]')
-xlabel('Thermal Conductivity of material (K)')
+xlabel('Thermal Conductivity of material K [W/cm°C]')
 

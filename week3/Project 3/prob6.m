@@ -27,7 +27,7 @@ for i = 0:n/2
 end
 
 figure
-plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
+plot(0:10,v_highest(:,1),'r-o')
 ylabel('Temperature [C°]')
 xlabel('n steps')
 legend('Higest temperature of each iteration','Location','Best')
