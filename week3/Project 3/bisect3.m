@@ -17,4 +17,5 @@ while (b-a)/2>tol
     a=c;fa=fc;
   end
 end
-xc=(a+b)/2;               %new midpoint is best estimate
+xc=a; 
+%new midpoint is best estimate

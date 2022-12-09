@@ -27,7 +27,9 @@ for i = 0:n/2
 end
 
 figure
-plot(0:10,v_highest(:,1),'r*') %DOUBLE CHECK IF THIS IS CORRECT
+plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
 ylabel('Temperature [C°]')
-xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate', 'FontSize', 9)
-legend('Higest temperature','Location','Best')
+xlabel('Distance [cm]')
+legend('Higest temperature of each iteration','Location','Best')
+
+%xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate [cm]', 'FontSize', 9)

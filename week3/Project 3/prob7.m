@@ -12,11 +12,11 @@ L = 2;
 move = 5; %posision where the heat starts to enter
 a = 5; %minimum power
 b = 10; %maximum power
-tol = 10^-3;
+tol = 10^-2;
 
 max_power_allowed = bisect3(a,b,tol,m,n,H,K,L,Lx,Ly,move);
 
-T = calc_max_temp(m,n,max_power_allowed,H,K,L,Lx,Ly,move)+100; 
+T = calc_max_temp(m,n,max_power_allowed,H,K,L,Lx,Ly,move)+100;
 %have to add 100 to the T value since it is a midpoint (zero)
 
 fprintf('\nThe maximum power allowed is: %.3f W\nWich results in maximum plate temperature: %.3f°C\n',max_power_allowed,T)

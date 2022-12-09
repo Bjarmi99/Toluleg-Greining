@@ -45,7 +45,7 @@ end
 
 wanted_values = [m_vec' n_vec' wanted_error'];
 
-%% Get the most efficient value
+%% Get the most time efficient values
 
 
 counter = 1;

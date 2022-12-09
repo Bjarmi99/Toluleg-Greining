@@ -9,7 +9,6 @@ Lx = 4;
 Ly = 4;
 L = 2;
 
-%L = 0; %cm
 counter = 1;
 for i = 0:n/2
     [A,b] = test(m,n,P,H,K,L,Lx,Ly,i);
@@ -28,6 +27,9 @@ for i = 0:n/2
 end
 
 figure
-plot(0:10,v_highest(:,1)) %DOUBLE CHECK IF THIS IS CORRECT
+plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
 ylabel('Temperature [C°]')
-xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate', 'FontSize', 9)
+xlabel('Distance [cm]')
+legend('Higest temperature of each iteration','Location','Best')
+
+%xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate [cm]', 'FontSize', 9)
