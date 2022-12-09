@@ -1,0 +1,18 @@
+close all; clear all; clc;
+T = [69.4034,76.7259,80.6979, 104.162];
+
+m = 50;
+n = 20;
+Lx = 4;
+Ly = 4;
+
+h = Lx/(m-1);
+k = Ly/(n-1);
+Atotal = 50*20*h*k;
+A = [0,5*h*k*2,10*h*k*10,30*h*k*10];
+
+
+plot(k,T, 'linewidth', 1.5)
+
+ xlabel('Notchsize [cm^2]')
+ ylabel('Temperature [°C]')
