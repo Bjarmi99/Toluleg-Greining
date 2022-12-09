@@ -17,5 +17,5 @@ while (b-a)/2>tol
     a=c;fa=fc;
   end
 end
-xc=a; 
+xc=a; %takes the left side of the point (lower boundary to not get a number higher than 100°C)
 %new midpoint is best estimate
