@@ -33,6 +33,29 @@ xlabel('H [W/cm^{2}°C]')
 %%  Independent problem PART 2
 close all; clear all; clc;
 
+H = 0.005; %W/cm^2 * C°
+K = 1.68; %W/cm^2 * C°
+m = 50;
+n = 20; %values from Problem 4
+Lx = 4;
+Ly = 4;
+L = 2;
+move = 5; %posision where the heat starts to enter
+ 
+[A,b] = set_up_the_matrix_independent(m,n,P,H,K,L,Lx,Ly,move);
+
+v = (A\b)+20;
+v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
+v_matrix = v_matrix';
+[X,Y] = meshgrid(1:m,1:n);
+
+
+mesh(X,Y,v_matrix)
+colorbar
+%view(2)
+highest_temp = v_matrix(1,1);
+fprintf('\nThe highest temperature is: %.4f',highest_temp)
+
 
 
 

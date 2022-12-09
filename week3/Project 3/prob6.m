@@ -3,7 +3,7 @@ close all; clear all; clc;
 P = 5; %W
 H = 0.005; %W/cm^2 * C°
 K = 1.68; %W/cm^2 * C°
-m = 40;
+m = 50;
 n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;

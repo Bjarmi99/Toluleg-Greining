@@ -2,7 +2,7 @@
 close all; clear all; clc;
 
 H = 0.005;
-m = 40;
+m = 50;
 n = 20; %values from Problem 4
 Lx = 4;
 Ly = 4;
@@ -24,5 +24,5 @@ end
 
 plot(K_vec,P_vec,'LineWidth',1.5)
 ylabel('Maximum Power allowed [W]')
-xlabel('Thermal Conductivity of material K [W/cmÂ°C]')
+xlabel('Thermal Conductivity of material K [W/cm°C]')
 
