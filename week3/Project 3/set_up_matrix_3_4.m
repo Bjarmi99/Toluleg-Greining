@@ -1,4 +1,4 @@
-function [A b] = set_up_matrix(m,n)
+function [A b] = set_up_matrix_3_4(m,n)
 P = 5; %W
 L = 2; %cm
 Lx = 2;
