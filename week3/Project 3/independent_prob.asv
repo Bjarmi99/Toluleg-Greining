@@ -1,4 +1,4 @@
-%% Independent problem PART 1
+%% Independent problem
 close all; clear all; clc;
 
 %H = 0.005;
@@ -24,15 +24,7 @@ end
 
 
 plot(H_vec,P_vec,'LineWidth',1.5)
-axis([0.005 0.1 0 35])
+axis([0.005 0.1 0 40])
 ylabel('Maximum Power allowed [W]')
-xlabel('H [W/cm^{2}°C]')
-
-%xlabel('Convective heat transfer (H [W/cm^{2}*°C])')
-
-%%  Independent problem PART 2
-close all; clear all; clc;
-
-
-
+xlabel('Convective heat transfer (H [W/cm^{2}*])')
 

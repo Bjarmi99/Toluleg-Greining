@@ -19,6 +19,6 @@ max_power_allowed = bisect3(a,b,tol,m,n,H,K,L,Lx,Ly,move);
 T = calc_max_temp(m,n,max_power_allowed,H,K,L,Lx,Ly,move)+100;
 %have to add 100 to the T value since it is a midpoint (zero)
 
-fprintf('\nThe maximum power allowed is: %.3f W\nWhich results in maximum plate temperature: %.3f°C\n',max_power_allowed,T)
+fprintf('\nThe maximum power allowed is: %.2f W\nWhich results in maximum plate temperature: %.2f°C\n',max_power_allowed,T)
 
 
