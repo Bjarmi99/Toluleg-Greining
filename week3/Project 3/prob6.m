@@ -22,7 +22,7 @@ for i = 0:n/2
     [X,Y] = meshgrid(1:m,1:n);
     mesh(X,Y,v_matrix)
     colorbar
-    view(2)
+    %view(2)
     counter = counter + 1;
 end
 
@@ -31,5 +31,3 @@ plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
 ylabel('Temperature [C°]')
 xlabel('n steps')
 legend('Higest temperature of each iteration','Location','Best')
-
-%xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate [cm]', 'FontSize', 9)
