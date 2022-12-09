@@ -4,7 +4,7 @@ m = 50;
 n = 20;
 
 Atotal = m*n; %total surface area
-A = [0,5*2/Atotal,10*10/Atotal,30*10/Atotal];
+A = [0,5*2/Atotal*100,10*10/Atotal*100,30*10/Atotal*100];
 
 plot(A,T, 'linewidth', 1.5)
 
