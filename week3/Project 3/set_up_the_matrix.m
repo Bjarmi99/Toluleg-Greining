@@ -1,4 +1,4 @@
-function [A b] = test(m,n,P,H,K,L,Lx,Ly,move)
+function [A b] = set_up_the_matrix(m,n,P,H,K,L,Lx,Ly,move)
 ratio = (L/Ly)*n; %scaling the y axis to position the power source
 delta = 0.1; %cm
 h = Lx/(m-1);

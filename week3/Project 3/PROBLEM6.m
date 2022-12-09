@@ -11,7 +11,7 @@ L = 2;
 
 counter = 1;
 for i = 0:n/2
-    [A,b] = test(m,n,P,H,K,L,Lx,Ly,i);
+    [A,b] = set_up_the_matrix(m,n,P,H,K,L,Lx,Ly,i);
     v = (A\b)+20;
     v_matrix = reshape(v(1:m*n),m,n); %here we reshape from vector to matrix so it maches the X,Y boundaries
     v_matrix = v_matrix';
@@ -29,7 +29,7 @@ end
 figure
 plot(0:10,v_highest(:,1),'r-o') %DOUBLE CHECK IF THIS IS CORRECT
 ylabel('Temperature [C°]')
-xlabel('Distance [cm]')
+xlabel('n steps')
 legend('Higest temperature of each iteration','Location','Best')
 
 %xlabel('Distance from the initial point (1,1) to the positioin where the heat starts to enters the plate [cm]', 'FontSize', 9)
