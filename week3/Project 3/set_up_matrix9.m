@@ -80,7 +80,7 @@ if move > 0 || move < L
     end
     
      %Left boundary no power (LOWER SIDE)
-    for j = 1:move  %MAYBE WRONG HERE IF MOVE == 1 (MOVE CAN'T BE = 1 TO START WITH?????      
+    for j = 1:move    
        i = 1; eq = i+(j-1)*m;
        A(eq,eq) = -3+((2*h*H)/K);
        A(eq,eq+1) = 4;
