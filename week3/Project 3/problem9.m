@@ -42,3 +42,30 @@ plot(0:10,v_highest(:,1),'r-o')
 ylabel('Temperature [C°]')
 xlabel('n steps')
 legend('Higest temperature of each iteration','Location','Best')
+
+%% Finding how large the power intake may be
+
+close all; clear all; clc;
+%P = 5; %W
+H = 0.005; %W/cm^2 * CÂ°
+K = 1.68; %W/cm^2 * CÂ°
+m = 50;
+n = 20; %values from Problem 4
+Lx = 4;
+Ly = 4;
+L = 2;
+x = 10;
+y = 10;
+External_temp = 20;
+tol = 10^-2;
+move = 5;
+a = 5; %W
+b = 10; %W
+
+
+max_power_allowed = bisect9(a,b,tol,m,n,H,K,L,Lx,Ly,move,x,y,External_temp);
+
+T = calc_max_temp9(m,n,max_power_allowed,H,K,L,Lx,Ly,move,x,y,External_temp)+100;
+%have to add 100 to the T value since it is a midpoint (zero)
+
+fprintf('\nThe maximum power allowed is: %.2f W\nWhich results in maximum plate temperature: %.2f°C\n',max_power_allowed,T)

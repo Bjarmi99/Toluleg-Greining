@@ -1,5 +1,24 @@
 %% Independent problem PART 1
 close all; clear all; clc;
+T = [69.4034,76.7259,80.6979, 104.162]; %Temperatures from the examples
+m = 50;
+n = 20;
+
+Atotal = m*n; %total surface area
+A = [0,5*2/Atotal*100,10*10/Atotal*100,30*10/Atotal*100];
+
+plot(A,T, 'linewidth', 1.5)
+
+xlabel('Notchsize in comparision with the total surface area [%]')
+ylabel('Temperature [°C]')
+
+
+
+
+
+
+%% Independent problem PART 2
+close all; clear all; clc;
 
 %H = 0.005;
 K = 1.68;
@@ -10,7 +29,7 @@ Ly = 4;
 L = 2;
 move = 5; %posision where the heat starts to enter
 a = 1; %minimum power
-b = 40; %maximum power
+b = 70; %maximum power
 tol = 10^-2;
 
 H = linspace(0.005,0.1,25);
@@ -30,7 +49,7 @@ xlabel('H [W/cm^{2}°C]')
 
 %xlabel('Convective heat transfer (H [W/cm^{2}*°C])')
 
-%%  Independent problem PART 2
+%%  Independent problem PART 3 (WHICH WE DID NOT WRITE ABOUT IN THE REPORT)
 close all; clear all; clc;
 P = 5;
 H = 0.005; %W/cm^2 * C°

@@ -17,4 +17,4 @@ mesh(X,Y,v_matrix)
 colorbar
 %view(2)
 highest_temp = v_matrix(1,1);
-fprintf('\nThe highest temperature is: %.4f',highest_temp)
+fprintf('\nThe highest temperature is: %.4f\n',highest_temp)

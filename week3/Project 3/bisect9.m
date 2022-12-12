@@ -1,0 +1,21 @@
+function xc = bisect9(a,b,tol,m,n,H,K,L,Lx,Ly,move,x,y,External_temp)
+
+f=@(P)calc_max_temp9(m,n,P,H,K,L,Lx,Ly,move,x,y,External_temp);
+if sign(f(a))*sign(f(b)) >= 0
+  error('f(a)f(b)<0 not satisfied!') %ceases execution
+end
+fa=f(a);
+while (b-a)/2>tol
+  c=(a+b)/2;
+  fc=f(c);
+  if fc == 0              %c is a solution, done
+    break
+  end
+  if sign(fc)*sign(fa)<0  %a and c make the new interval
+    b=c;
+  else                    %c and b make the new interval
+    a=c;fa=fc;
+  end
+end
+xc=a; %takes the left side of the point (lower boundary to not get a number higher than 100°C)
+%new midpoint is best estimate
